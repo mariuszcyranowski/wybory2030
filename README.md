@@ -16,7 +16,7 @@ Projekt demonstruje bezpieczny i anonimowy protokół głosowania oparty o:
 ├── token_qr.png                         # Przykładowy kod QR z tokenem
 ├── Wybory 2030 - Proces głosowania.svg  # Diagram procesu głosowania
 └── src/
-   ├── gen\_token.py                     # Generator tokenów QR + benchmark wydajności
+   ├── generate.py                       # Generator tokenów QR + benchmark wydajności
    └── verify.py                         # Weryfikacja podpisanego tokena
 ```
 
@@ -48,14 +48,14 @@ Projekt demonstruje bezpieczny i anonimowy protokół głosowania oparty o:
 
    ```bash
    python -m venv venv
-   source venv/bin/activate  # lub .\venv\Scripts\activate
+   source venv/bin/activate
    pip install -r requirements.txt
    ```
 
 2. Wygeneruj i przetestuj tokeny:
 
    ```bash
-   python src/gen_token.py
+   python src/generate.py
    ```
 
 3. Zweryfikuj podpisany token:
